@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rock Paper Scissors | HackWeek 2026</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎮 Rock Paper Scissors</h1>
+
+    <p class="subtitle">
+        First to <span>5</span> Wins
+    </p>
+
+    <div class="score-board">
+
+        <div class="score-card">
+
+            <h3>👤 YOU</h3>
+
+            <p id="player-score">0</p>
+
+        </div>
+
+        <div class="vs">
+
+            VS
+
+        </div>
+
+        <div class="score-card">
+
+            <h3>🤖 COMPUTER</h3>
+
+            <p id="computer-score">0</p>
+
+        </div>
+
+    </div>
+
+    <div class="battle-area">
+
+        <div class="battle-card">
+
+            <h3>Your Move</h3>
+
+            <div id="player-choice" class="battle-icon">
+                ❔
+            </div>
+
+        </div>
+
+        <div class="battle-card">
+
+            <h3>Computer</h3>
+
+            <div id="computer-choice" class="battle-icon">
+                ❔
+            </div>
+
+        </div>
+
+    </div>
+
+    <h2 id="result-text">
+        Choose your weapon!
+    </h2>
+
+    <div class="choices">
+
+        <button class="choice" data-choice="rock">
+            🪨
+            <span>Rock</span>
+        </button>
+
+        <button class="choice" data-choice="paper">
+            📄
+            <span>Paper</span>
+        </button>
+
+        <button class="choice" data-choice="scissors">
+            ✂️
+            <span>Scissors</span>
+        </button>
+
+    </div>
+
+    <button id="reset-btn">
+
+        🔄 Reset Match
+
+    </button>
+
+    <div class="footer">
+
+        HackWeek 2026 • Built by Kailash 🚀
+
+    </div>
+
+</div>
+<div id="winner-modal" class="winner-modal">
+
+    <div class="modal-content">
+
+        <h1 id="winner-title">🏆 You Won!</h1>
+
+        <button id="play-again">
+            Play Again
+        </button>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
