@@ -26,18 +26,6 @@ A modern and interactive Rock Paper Scissors game built using HTML, CSS, and Jav
 
 ---
 
-## 🚀 Live Demo
-
-Coming Soon
-
----
-
-## 📸 Screenshots
-
-Add screenshots here after deployment.
-
----
-
 ## 👨‍💻 Author
 
 **Kailash**
